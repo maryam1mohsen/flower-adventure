@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Adventure Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #ffffff;
+            font-family: 'Glacial Indifference';
+        }
+        canvas {
+            display: block;
+            background: url("grass3.png") no-repeat;
+            background-size: cover;
+        }
+        #flowerCount, #livesCount {
+            position: absolute;
+            top: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+        #flowerCount {
+            right: 10px;
+        }
+        #livesCount {
+            left: 10px;
+        }
+        #flowerIcon, #heartIcon {
+            width: 32px;
+            height: 32px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="livesCount">
+        <img id="heartIcon" src="heart.png">
+        <span id="hearts">3</span>
+    </div>
+    <div id="flowerCount">
+        <img id="flowerIcon" src="flower.png">
+        <span id="flowers">0/10</span>
+    </div>
+    <canvas></canvas>
+</body>
+</html>
